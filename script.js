@@ -40,6 +40,10 @@ for (let i=0 ; i<x.length ; i++){
     accordion[i].classList.toggle('active') ;
     z.classList.toggle("container");
     z.classList.toggle("activist");
+    const p = accordion[i].closest("active");
+    if (p!==accordion[i]){
+      p.classList.remove("active");
+    }
 
   })
 };
@@ -59,3 +63,22 @@ for (let i=0 ; i<x.length ; i++){
     //section.classList.toggle("active");
   //});
 // });
+
+
+
+//foreach =======>>>> is a different way for tracking all the elements of an array or an array like collection like html collection or nodelist 
+//but for each is more effective because it is more clean . by the way it is a method 
+
+
+
+accordion.forEach( i => {
+  i.addEventListener("click",() =>{
+    i.classList.toggle("active");
+    const p = i.closet("active");
+    if (i !== p){
+      p.classList.remove("active");
+    }
+
+  })
+  
+});
