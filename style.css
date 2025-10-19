@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Jost:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    box-sizing:content-box ;
+    padding:0;
+    
+    margin:0;
+}
+
+body{
+    background-image: url(https://th.bing.com/th/id/R.c3b3068b6e11e3b8c2e407c07d9063a3?rik=jinxfU7aAk8SCA&pid=ImgRaw&r=0);
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.container{
+    width:40%;
+    height: 350px;
+    background-color: white;
+    border : solid 2px;
+    border-color: rgb(195, 195, 195);
+    border-radius:30px;
+    padding:30px;
+    
+    
+
+    position:relative;
+    top:250px;
+    transition: .5s
+
+}
+.title{
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-overflow: ellipsis;
+    padding-bottom: 10px;
+
+}
+.question {
+    display:flex;
+    justify-content: space-between;
+    font-size: 1.2rem ;
+    font-family:  "Roboto", sans-serif ;
+    font-weight:400;
+    color: rgb(47, 47, 47);
+    border-bottom: 1px solid;
+
+    
+}
+
+.btn:active{
+    color: brown;
+    cursor: pointer;
+}
+.btn:hover{
+    cursor:pointer;
+}
+.p:active{
+    color: brown;
+    cursor: pointer;
+}
+.p:hover{
+    cursor:pointer;
+}
+.container-question-anwser{
+    padding-bottom:30px;
+    padding-top:1px ;
+    
+
+
+
+}
+.anwser {
+    font-family:"Roboto", sans-serif ;
+    font-size:1.1rem;
+    font-weight:40px;
+    padding:7px;
+    line-height: 29px;
+    height: 0px;
+    overflow: hidden;
+    transition: .5s
+    
+}
+
+
+
+/* //planning lazem eni wen nenzel 3le wa7ed menhom tsir chain mte3 events */
+/* 1. lazem el  container elkbir ywli atwal
+2. lazem el height mte3 el element el padding mte3 el element eli tnzel 3lih yetbdel
+3.lazem el paragrah tawli visible 
+ha4a el kol lazem yetl3eb bih fi js 
+first create the classes second rekbom fi js w fi nafess el wa9et debuge */
+/* and this is the trick actually when i write height:0 the whole container will vanish 
+as a result of that the whole container will adapt 
+abstraction : by controling the height of the elements inside the container i am actually controlling its height */
+/* this trick is very good */
+
+
+.active .anwser {
+    height: 150px ;
+}
+
+.activist{
+    width:40%;
+    height: 450px;
+    background-color: white;
+    border : solid 2px;
+    border-color: rgb(195, 195, 195);
+    border-radius:30px;
+    padding:30px;
+    
+    
+
+    position:relative;
+    top:250px;
+    transition: .5s
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =======>>>> my main my proble is the weaknbess in understanding how we use css and jaavscript dynamically */
