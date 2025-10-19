@@ -40,10 +40,15 @@ for (let i=0 ; i<x.length ; i++){
     accordion[i].classList.toggle('active') ;
     z.classList.toggle("container");
     z.classList.toggle("activist");
-    const p = accordion[i].closest(".active");
-    if (p!==accordion[i]){
-      p.classList.remove("active");
-    }
+    //const p = accordion[i].closest(".active");
+    //if (p!==accordion[i]){
+      //p.classList.remove("active");
+    //}
+    document.querySelectorAll(".container-question-anwser.active").forEach(section => {
+      if (section !== accordion[i]) {
+        section.classList.remove("active");
+      }
+    });g
 
   })
 };
@@ -52,6 +57,7 @@ document.querySelectorAll(".container-question-anwser.active").forEach(section =
     section.classList.remove("active");
   }
 });
+// i need to select all the elements that is open and if one of them is not what i want to be open then i should close them
 //const questions = document.querySelectorAll(".question");
 
 // questions.forEach((q) => {
